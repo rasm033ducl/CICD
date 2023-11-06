@@ -25,6 +25,13 @@ jobs:
       
       - name: Install dependencies
         run: dotnet restore
+      - name: check for vulnerable packages
+        run: |
+          New-item vulnerabilities.txt
+          dotnet list package --vulnerable --include-transitive | Tee-Object vulnerabilities.txt
+          $matches = Get-Content vulnerabilities.txt | Select-String -Pattern "has the following vulnerable packages"
+          if($matches.Length -gt 0){echo 'vulnerable packages detected'; exit 1}
+
       - name: Execute unit tests
         run: dotnet test
 
