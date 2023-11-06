@@ -1,0 +1,48 @@
+{
+  "name": "unit-test-examples",
+  "version": "2.0.0",
+  "description": "Example code for my talks and workshops on unit testing.",
+  "keywords": [
+    "code",
+    "es6",
+    "javascript",
+    "mock",
+    "mocking",
+    "patch",
+    "php",
+    "test",
+    "testable",
+    "testing",
+    "unit",
+    "wordpress",
+    "wp"
+  ],
+  "homepage": "https://github.com/tfrommen/unit-test-examples",
+  "bugs": "https://github.com/tfrommen/unit-test-examples/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Thorsten Frommen",
+    "email": "info@tfrommen.de",
+    "url": "https://tfrommen.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tfrommen/unit-test-examples"
+  },
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "jest-each": "^0.3.1",
+    "react-test-renderer": "^16.3.1"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  }
+}
